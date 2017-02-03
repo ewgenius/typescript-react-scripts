@@ -1,3 +1,5 @@
+/// <reference path="../../node_modules/@types/node/index.d.ts" />
+
 import * as React from 'react';
 import { Component } from 'react';
 const logo = require('./logo.svg');
