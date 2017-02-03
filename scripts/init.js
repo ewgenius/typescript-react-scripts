@@ -14,6 +14,7 @@ var chalk = require('chalk');
 
 module.exports = function(appPath, appName, verbose, originalDirectory, template) {
   var ownPackageName = require(path.join(__dirname, '..', 'package.json')).name;
+  console.log(ownPackageName);
   var ownPath = path.join(appPath, 'node_modules', ownPackageName);
   var appPackage = require(path.join(appPath, 'package.json'));
   var useYarn = fs.existsSync(path.join(appPath, 'yarn.lock'));
